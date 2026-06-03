@@ -8,9 +8,10 @@
 (show-paren-mode 1)
 (ido-mode 1)
 (ido-everywhere 1)
-(setq display-line-numbers 'relative)
+(setq-default display-line-numbers 'relative)
 (setq-default indent-tabs-mode nil)
 (setq make-backup-files nil)
+(setq inhibit-startup-screen t)
 
 ;; (add-to-list 'default-frame-alist `(font . "Iosevka-12"))
 
