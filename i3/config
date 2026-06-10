@@ -304,7 +304,7 @@ bindsym $mod+n exec --no-startup-id /usr/bin/thunar
 
 # Screenshot
 # select a window or rectangle with the mouse
-bindsym $mod+Shift+s exec --no-startup-id scrot -e 'xclip -selection clipboard -t image/png -i $f'
+bindsym $mod+Shift+s exec --no-startup-id scrot -s -e 'xclip -selection clipboard -t image/png -i $f'
 
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
@@ -420,7 +420,7 @@ exec --no-startup-id dex --autostart --environment i3
 #exec --no-startup-id numlockx on
 
 # configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK in this example)
-#exec --no-startup-id setxkbmap -layout 'us,sk' -variant altgr-intl,qwerty -option 'grp:alt_caps_toggle'
+exec --no-startup-id setxkbmap -option 'ctrl:nocaps'
 
 # start conky:
 #exec_always --no-startup-id conky
